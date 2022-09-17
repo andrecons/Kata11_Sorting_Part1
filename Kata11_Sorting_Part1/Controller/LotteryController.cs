@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Kata11_Sorting_Part1.Objects;
 
-namespace Kata11_Sorting_Part1.Objects.Controller
-{
+namespace Kata11_Sorting_Part1;
+
     static class LotteryController
     {
         private const int minValue = 0;
@@ -24,4 +25,4 @@ namespace Kata11_Sorting_Part1.Objects.Controller
             }
         }
     }
-}
+

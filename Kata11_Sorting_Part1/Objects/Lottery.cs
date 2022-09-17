@@ -31,7 +31,7 @@ namespace Kata11_Sorting_Part1.Objects
             }
             else
             {
-                Console.WriteLine("the ball" + newBall + " has already been taken");
+                //Console.WriteLine("the ball " + newBall + " has already been taken");
                 return false;
             }
 

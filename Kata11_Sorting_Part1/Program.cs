@@ -1,4 +1,4 @@
-﻿using Kata11_Sorting_Part1.Objects.Controller;
+﻿using Kata11_Sorting_Part1;
 
 Console.WriteLine("Welcome to the Pragraitic lottery!");
 Console.Write("How many balls do you want to draw out?: ");
