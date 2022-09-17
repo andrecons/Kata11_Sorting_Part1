@@ -19,7 +19,7 @@ namespace Kata11_Sorting_Part1.Objects
             this.vMax = inputMaxValue;
         }
 
-        public void DrawOut()
+        public bool DrawOut()
         {
             Random rnd = new Random();
             int newBall = rnd.Next(vMin, vMax +1); // returns random integers >= 10 and < 20
@@ -27,10 +27,12 @@ namespace Kata11_Sorting_Part1.Objects
             if (!IsContained(newBall))
             {
                 winnerRack.Add(newBall);
+                return true;
             }
             else
             {
-                //Console.WriteLine("the ball" + newBall + " has already been taken");
+                Console.WriteLine("the ball" + newBall + " has already been taken");
+                return false;
             }
 
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kata11_Sorting_Part1.Objects
+namespace Kata11_Sorting_Part1.Objects.Controller
 {
     static class LotteryController
     {
@@ -17,7 +17,8 @@ namespace Kata11_Sorting_Part1.Objects
 
             for (int i = 0; i < ballsToDrawOut; i++)
             {
-                lottery.DrawOut();
+                while (!lottery.DrawOut()) { }
+                
                 lottery.RackSort();
                 lottery.RackPrint();
             }
